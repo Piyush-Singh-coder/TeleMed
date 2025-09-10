@@ -36,10 +36,6 @@ app.use('/api/medicine',medicineRoutes);
 app.use('/api/meetings', jitsiRoutes);
 app.use('/api/ai-consult',aiConsultRoutes);
 
-app.get("/", (req,res) =>{
-    res.json({message: "Server is running..."})
-})
-
 if(process.env.NODE_ENV === "production"){
     app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
