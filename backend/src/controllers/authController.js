@@ -1,7 +1,7 @@
 import { generateToken } from "../config/utils.js";
 import DoctorProfile from "../models/DoctorProfile.js";
 import PatientProfile from "../models/PatientProfile.js";
-import User, { ROLES } from "../models/user.js";
+import User, { ROLES } from "../models/User.js";
 import bcrypt, { genSalt } from "bcryptjs";
 
 export const register = async (req, res) => {
