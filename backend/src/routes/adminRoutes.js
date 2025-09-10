@@ -1,6 +1,6 @@
 import express from "express";
 import { authorize, protect } from "../middlewares/authMiddleware.js";
-import User from "../models/user.js";
+import User from "../models/User.js";
 import bcrypt, { genSalt } from "bcryptjs";
 import DoctorProfile from "../models/DoctorProfile.js";
 
